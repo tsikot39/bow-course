@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Reset default margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f9f9f9; */
+  background-color: #f0f0f0;
+  /* background-color: #e0f7fa; */
+  /* background-color: #fafafa; */
+  /* background-color: #f4fdf4; */
+  /* background-color: #f7f4fc; */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+}
+
+.login-container {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+}
+
+.courses-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+}
+
+h1 {
+  /* font-size: 1.5rem;  */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  text-align: center;
+}
+
+/* Heading Styles */
+h2 {
+  /* color: #2c3e50; */
+  /* font-size: 1.5rem; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Form Input Styling */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ecf0f1;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+ul li button {
+  background-color: #e74c3c;
+  color: white;
+  margin: 10px 0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: 5px;
+}
+
+ul li button:hover {
+  background-color: #c0392b;
+}
+
+/* Course List and Selected Courses Styling */
+.courses-list,
+.selected-courses-list {
+  margin: 20px 0;
+}
+
+.courses-list li,
+.selected-courses-list li {
+  background-color: #f0f4f7;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Landing Page Styles */
+.landing-page {
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.landing-page p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.landing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.landing-actions button {
+  background-color: white;
+  color: #3498db;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-actions button:hover {
+  background-color: #ecf0f1;
+}
+
+/* Programs and Courses Page Styles */
+.programs-container {
+  padding: 20px;
+}
+
+.program-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.program-card p {
+  margin: 5px 0;
+}
+
+/* Back to Home Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Login Page Styles */
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+}
+
+/* Back to Home Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* .profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+} */
+
+.profile-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  color: #3498db;
+}
+
+/* Profile Link Styles */
+.profile-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #3498db;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Add space above the Select Term section */
+.select-term-section {
+  margin-top: 20px; /* Adjust the value to the spacing you want */
+}
+
+/* Add space above the Selected Courses section */
+.selected-courses-section {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+
+/* Add space above the Register for Courses button */
+.register-button {
+  margin-top: 30px; /* Adjust this value to increase or decrease the space */
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+} */
+
+@media (max-width: 900px) {
+  .profile-container {
+    max-width: 90%; /* For smaller devices, use a percentage */
+    min-width: unset; /* Remove min-width to allow for flexibility */
+  }
+}
+
+/* General layout */
+.dashboard-layout {
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  /* height: 100vh; */
+}
+
+/* .sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.sidebar button:hover {
+  background-color: #2980b9;
+}
+
+/* Content styles */
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 900px;
+}
+
+.select-term-section {
+  margin-top: 20px;
+}
+
+.selected-courses-section {
+  margin-top: 20px;
+}
+
+.mt-20px {
+  margin-top: 20px;
+}
+
+.selected-courses-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-content {
+    width: 80%; /* Adjust to be smaller on smaller screens */
+  }
+}
+
+/* Header Styling */
+.header {
+  background-color: #3498db; /* Same color as the system's primary color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 4px solid #2980b9; /* Optional styling for border */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
